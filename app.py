@@ -9,7 +9,7 @@ app = Flask(__name__)
 def webhook():
     auth_header = os.getenv('NETILION_AUTH')
     api_key = os.getenv('NETILION_API_KEY')
-    req = request.get_json(silent=true, force=True)
+    req = request.get_json(silent=True, force=True)
     intent = req["queryResult"]["intent"]["displayName"]
     if intent == 'GetOverview':
         request_headers = {'accept': 'application/json', 'Authorization': auth_header, 'Api-Key': api_key}
