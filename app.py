@@ -52,7 +52,7 @@ def webhook():
         cause = get_cause_remedy_json['health_conditions'][0]['causes'][0]['description']
         remedy = get_cause_remedy_json['health_conditions'][0]['causes'][0]['remedies'][0]['description']
 
-        get_asset_location_url = 'https://api.netilion.endress.com/v1/assets/' + str(asset_id) + '/nodes
+        get_asset_location_url = 'https://api.netilion.endress.com/v1/assets/' + str(asset_id) + '/nodes'
         get_asset_location_result = requests.get(get_asset_location_url, headers=request_headers)
         get_asset_location_json = get_asset_location_result.json()
         location = get_asset_location_json['nodes'][0]['name']
