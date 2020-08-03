@@ -10,10 +10,10 @@ app = Flask(__name__)
 def webhook():
     auth_header = os.getenv('NETILION_AUTH')
     api_key = os.getenv('NETILION_API_KEY')
+    request_headers = {'accept': 'application/json', 'Authorization': auth_header, 'Api-Key': api_key}
     req = request.get_json(silent=True, force=True)
     intent = req["queryResult"]["intent"]["displayName"]
     if intent == 'GetOverview':
-        request_headers = {'accept': 'application/json', 'Authorization': auth_header, 'Api-Key': api_key}
         get_total_assets_result = requests.get('https://api.netilion.endress.com/v1/assets', headers=request_headers)
         get_total_assets_json = get_total_assets_result.json()
         count_total_assets = get_total_assets_json['pagination']['total_count']
