@@ -19,7 +19,7 @@ def webhook():
 
         get_failure_assets_result = requests.get('https://api.netilion.endress.com/v1/assets?status_code=failure*', headers=request_headers)
         get_failure_assets_json = get_total_assets_result.json()
-        count_failure_assets = get_total_assets_json['pagination']['total_count']
+        count_failure_assets = get_failure_assets_json['pagination']['total_count']
 
         answer = 'There are currently ' + str(count_total_assets) + ' connected assets. ' + str(count_failure_assets) + ' is currently in failure status'
 
