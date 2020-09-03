@@ -1,11 +1,11 @@
 # "myprocessplant" App
-This code allows you to easily create your own Webhook for interacting with [Dialogflow](https://dialogflow.com/) (API v2) and thus integrating the [Netilion API](https://api.netilion.endress.com/doc/v1/) into a conversational platform, as shown in our promotional video.
+This code allows you to easily create your own Webhook for interacting with [Dialogflow](https://dialogflow.com/) (API v2) and thus integrating the [Netilion API](https://api.netilion.endress.com/doc/v1/) into a conversational platform, as shown in our [Promotional Video](https://www.youtube.com/watch?v=t2_wmIuDhNE).
 
 ![Screenshot from Promotional Video](/images/Teaser_Video_Screenshot.jpg)
 
 
 # How to Use this Code
-The entire process is explained in detail in this Video on Youtube.
+The entire process is explained in detail in [this Video on Youtube](https://www.youtube.com/watch?v=VfkfDQ7elzE).
 
 ![Screenshot from How-To Video](/images/Explanation_Video_Screenshot.jpg)
 
